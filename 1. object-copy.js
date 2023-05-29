@@ -17,9 +17,6 @@ const original = {
     numb: 1,
     object: {
         asd: 'asd',
-        asd2: {
-            asd2: '123',
-        }
     },
     func: function () {
         return 1;
