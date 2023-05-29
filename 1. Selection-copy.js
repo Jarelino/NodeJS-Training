@@ -9,3 +9,5 @@ const SelectionCopy = (obj, rule) => {
 
     return cloneObj;
 }
+
+export default SelectionCopy;

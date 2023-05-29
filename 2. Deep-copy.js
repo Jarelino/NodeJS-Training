@@ -9,3 +9,5 @@ const DeepCopy = (obj) => {
 
     return cloneObj;
 }
+
+export default DeepCopy;
