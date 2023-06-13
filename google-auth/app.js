@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-
+require('dotenv').config();
 
 // MONGO MODULES    
 const mongoose = require('mongoose');
@@ -14,7 +14,7 @@ const authRouter = require("./routes/auth");
 const passport = require("passport");
 require("./passportSettings");
 
-const MONGODB_URI = 'mongodb+srv://romayaruk:sXoSxt6Vu1bHDEVr@cluster0.hu13b6c.mongodb.net/shop';
+const MONGODB_URI = process.env.MONGODB_URI;
 
 const MongoStore = new MongoDBStore({
     uri: MONGODB_URI,
